@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>
+            JsStudy
+        </title>
+    </head>
+    <body> 
+        <text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </text>
+
+
+
+
+        
+        <!-- <script src="test01.js"></script> -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+        </script>
+        <script>
+            $.ajax({
+                method: "GET",
+                url: "https://kapi.kakao.com/v1/translation/translate",
+                src_lang: "en",
+                target_lang: "kr",
+                data: {query: "apple"},
+                headers: {Authorization: "KakaoAK 2613b45ff8be0e79853b6f8d329b4db0"}
+            })
+                .done(function( msg ) {
+                    console.log(msg );
+                });
+        </script>
+    </body>
+</html>
